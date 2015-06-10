@@ -1,0 +1,139 @@
+/**, *:before, *:after {
+	box-sizing: border-box;
+
+	border: dotted 1px blue;
+}*/
+
+
+/**************************
+mobile first
+**************************/
+
+h1, h2 {
+	font-family: 'Amatic SC', Sans-Serif;
+	margin: 0;
+}
+
+h1 {
+	font-size: 3em;
+	
+}
+h2 {}
+h3 {} 
+h4 {}
+h5 {}
+
+p {}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	background-color: darkgrey;
+}
+
+
+
+.tile {
+	display: block;
+	max-width: 90%;
+	margin: 0 5%;
+	background-color: #ded3ca;
+	border: solid 5px #5f6273;
+}
+/*
+@media screen and (min-width: 700px) {
+	.tile {
+		display: inline-block;
+		max-width: 40%;
+	}
+}*/
+
+
+#titleTile, #searchTile, #mediaTile {
+	text-align: center;
+}
+/*
+@media screen and (min-width: 850px) {
+	.leftTiles, .rightTiles {
+		max-width: 40%;
+		display: inline-block;
+	}
+}*/
+
+.leftTiles, .rightTiles {}
+
+.leftTiles {}
+.rightTiles {}
+
+#titleTile, #searchTile {
+	clear: right;
+}
+
+#titleTile {
+	max-width: 615px;
+}
+#logotext {}
+
+
+#turntableTile {
+	position: relative;
+	max-width: 615px;
+	max-height: 477px;
+	margin: ;	
+}
+
+#turntableTile img {
+	background-color: #999;
+	max-width: 100%;
+}
+
+#artRotating {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+#mediaInfo {
+	position: absolute;
+	bottom: 30px;
+	right: 100px;
+}
+.nowPlaying {
+	text-align: right;
+	line-height: 1em;
+	margin: 0;
+	padding: none;
+}
+
+#searchTile {}
+#searchText {}
+#searchBar {}
+
+#mediaTile {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
