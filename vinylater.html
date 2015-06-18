@@ -6,6 +6,7 @@
 		<!-- <link rel="shortcut icon" type="image/ico" href="favicon.ico" /> -->
    		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/responsive.css">
 		<link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
 		<!-- <link rel="stylesheet" href="css/responsive.css"> -->
@@ -17,48 +18,47 @@
 	</header>
 
 	<body>
-		<div>
+		<div id="wrapper">
 			<div class="leftTiles">
 				<div id="titleTile" class="tile"> 
 					<h1 id="logotext">V i N Y L A T e R</h1>
 				</div>
 					
 				<div id="turntableTile" class="tile">
-					<img src="turntable1.jpg" alt="turntable">
+					<img src="img/turntable1.jpg" alt="turntable">
 					
 					<div id="artRotating">
-					<img src=""
+						<img src="img/APart1x140.gif" alt="album art">
 					</div>
 
 					<div id="mediaInfo">
-						<div class="nowPlaying" id="artistText"><p>artist</p></div>
-						<div class="nowPlaying" id="albumText"><p>album</p></div>
-						<div class="nowPlaying" id="trackText"><p>track</p></div>
+						<div class="nowPlaying" id="artistText"><p>Action Pollock</p></div>
+						<div class="nowPlaying" id="albumText"><p>Songs of Hope</p></div>
+						<div class="nowPlaying" id="trackText"><p>Cosmic Horses</p></div>
 					</div>
 				</div>
 			</div>
 
 			<div class="rightTiles">
 				<div id="searchTile" class="tile">
-					<!-- <img src="recordCollection" alt="record collection"> -->
-					<div id="searchText">
+					<img src="img/recordstackx350.gif" alt="record drawer">
+
+					<div id="search">
 						<h2>Put A Record On</h2>
+
+						<input id="searchBox" placeholder="search artists, albums...">
+
+						<div id="optionsMenu">
+							<!-- toggle full records only  -->
+							<!-- turntable/theme change -->
+						</div> 
 					</div>
 
-					<div id="searchBar">
-						search bar
-					</div>
-
-					<div id="optionsMenu">
-						toggle full records only 
-						turntable/theme change
-					</div> 
 				</div>
 				
 				<div id="mediaTile" class="tile">
 					<div id="albumArt">
-						album art
-						(flip button?)
+						<img src="img/APart1x350.gif" alt="Action Pollock Album Art">
 					</div>
 					
 					<div id="mediaControls">

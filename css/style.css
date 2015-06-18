@@ -15,15 +15,8 @@ h1, h2 {
 }
 
 h1 {
-	font-size: 3em;
-	
+	font-size: 5em;
 }
-h2 {}
-h3 {} 
-h4 {}
-h5 {}
-
-p {}
 
 a {
 	text-decoration: none;
@@ -33,36 +26,25 @@ body {
 	background-color: darkgrey;
 }
 
-
+img {
+	background-color: lightblue;
+}
 
 .tile {
 	display: block;
-	max-width: 90%;
-	margin: 0 5%;
 	background-color: #ded3ca;
 	border: solid 5px #5f6273;
 }
-/*
-@media screen and (min-width: 700px) {
-	.tile {
-		display: inline-block;
-		max-width: 40%;
-	}
-}*/
 
 
 #titleTile, #searchTile, #mediaTile {
 	text-align: center;
 }
-/*
-@media screen and (min-width: 850px) {
-	.leftTiles, .rightTiles {
-		max-width: 40%;
-		display: inline-block;
-	}
-}*/
 
-.leftTiles, .rightTiles {}
+
+.leftTiles, 
+.rightTiles {}
+}
 
 .leftTiles {}
 .rightTiles {}
@@ -71,48 +53,122 @@ body {
 	clear: right;
 }
 
+#wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+
+/*****title tile******************/
+
 #titleTile {
 	max-width: 615px;
 }
+
 #logotext {}
 
+
+/*******turntable tile*********************/
 
 #turntableTile {
 	position: relative;
 	max-width: 615px;
-	max-height: 477px;
-	margin: ;	
+	max-height: 477px;	
 }
 
 #turntableTile img {
-	background-color: #999;
+	z-index: -1;
 	max-width: 100%;
 }
 
 #artRotating {
 	position: absolute;
-	top: 10px;
-	left: 10px;
+	top: 34%;
+	left: 27%;
+	max-width: 23%;
 }
+
+#artRotating img {
+	border-radius: 100%;
+	max-width: 100%;
+}
+
+/*****NOW PLAYING***************************/
 
 #mediaInfo {
 	position: absolute;
-	bottom: 30px;
-	right: 100px;
-}
-.nowPlaying {
-	text-align: right;
-	line-height: 1em;
-	margin: 0;
-	padding: none;
+	bottom: 2%;
+	right: 5%;
 }
 
-#searchTile {}
-#searchText {}
-#searchBar {}
+.nowPlaying {
+	text-align: right;
+	line-height: .6em;
+	width: 10em;
+	margin: 0;
+	padding: none;
+	color: #FFF;
+	text-shadow: 2px 2px 5px #000;
+}
+
+#artistText {
+	font-weight: bold;
+}
+
+#albumText {
+	font-style: italic;
+} 
+
+#trackText {}
+
+
+/****Search Tile**************************/
+
+#searchTile {
+	position: relative;
+	display: block;
+	max-width: 350px;
+	max-height: 175px;
+}
+
+#searchTile img {
+	z-index: -1;
+	max-width: 100%;
+	opacity: .75;
+}
+
+#search {
+	position: absolute;
+	top: 15%;
+	width: 100%;
+	display: block;
+}
+
+#search h2 {
+	font-size: 3em;
+	font-weight: bold;
+	color: #fff;
+	text-shadow: 5px 5px 10px #000;
+}
+
+#searchBox {
+	width: 50%;
+	line-height: 1.5em;
+}
+
+#options {
+
+}
+
+/****** Media Tile *************************/
 
 #mediaTile {}
 
+#albumArt {
+	max-width: 350px;
+	max-height: 350px;
+	border-bottom: inherit;
+}
 
 
 
