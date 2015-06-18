@@ -156,8 +156,14 @@ img {
 	line-height: 1.5em;
 }
 
-#options {
-
+#optionsButton {
+	font-size: 4em;
+	font-weight: bold;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0);
+	line-height: .8em;
+	border: none;
+	margin-top: .1em;
 }
 
 /****** Media Tile *************************/
