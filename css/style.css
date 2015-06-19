@@ -188,7 +188,7 @@ img {
 #mediaControls {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-content: stretch;
 	max-width: 350px;
 	max-height: 22px;
@@ -207,14 +207,12 @@ img {
 #fullscreen {
 	border: none;
 	border-right: solid 5px #5f6273;
-	margin: auto;
 	padding-top: 2px;
 	padding-bottom: 2px;
 }
 
 #frontBack {
 	border: none;
-	margin: auto;
 }
 
 #mediaTags {
