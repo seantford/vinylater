@@ -56,6 +56,10 @@ img {
 #wrapper {
 	display: flex;
 	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	margin: 2em auto;
+
 }
 
 
@@ -72,7 +76,7 @@ img {
 
 #turntableTile {
 	position: relative;
-	max-width: 615px;
+	max-width: 360px;
 	max-height: 477px;	
 }
 
@@ -148,7 +152,7 @@ img {
 	font-size: 3em;
 	font-weight: bold;
 	color: #fff;
-	text-shadow: 5px 5px 10px #000;
+	text-shadow: 5px 5px 5px #000, 1px 1px 5px #000;
 }
 
 #searchBox {
@@ -161,14 +165,17 @@ img {
 	font-weight: bold;
 	color: #fff;
 	background-color: rgba(0, 0, 0, 0);
+	text-shadow: 5px 5px 5px #000, 1px 1px 5px #000;
 	line-height: .8em;
 	border: none;
 	margin-top: .1em;
 }
 
-/****** Media Tile *************************/
+/************ Media Tile *************************/
 
-#mediaTile {}
+#mediaTile {
+	max-width: 350px;
+}
 
 #albumArt {
 	max-width: 350px;
@@ -176,10 +183,51 @@ img {
 	border-bottom: inherit;
 }
 
+/****** Media Controls ********************************/
 
+#mediaControls {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: stretch;
+	max-width: 350px;
+	max-height: 22px;
+	height: 22px;
+	border-bottom: inherit;
+}
 
+#mediaControls button {
+	background: none;
+	text-align: center;
+}
 
+#rewindButton, 
+#playButton, 
+#ffButton, 
+#fullscreen {
+	border: none;
+	border-right: solid 5px #5f6273;
+	margin: auto;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
 
+#frontBack {
+	border: none;
+	margin: auto;
+}
+
+#mediaTags {
+	height: 21px;
+	max-width: 350px;
+	max-height: 21px;
+	display: flex;
+}
+
+#mediaTags p {
+	align-items: stretch;
+	margin: auto;
+}
 
 
 

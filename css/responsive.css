@@ -1,7 +1,16 @@
 @media screen and (min-width: 400px) {
 	
 }
-@media screen and (min-width: 850px) {
+
+@media screen and (min-width: 375px) {
+	
+	#turntableTile {
+		max-width: 615px;
+	}
+
+	.leftTiles {
+		/*max-width: 615px;*/
+	}
 	#wrapper {
 		flex-direction: row;
 		flex-wrap: wrap;
