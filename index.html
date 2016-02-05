@@ -5,15 +5,14 @@
 		<title>The Vinylater 2.0: Put A Record On</title>
 		<!-- <link rel="shortcut icon" type="image/ico" href="favicon.ico" /> -->
    		<link rel="stylesheet" href="css/normalize.css">
-		<!-- <link rel="stylesheet" href="css/style.css"> -->
+		<link rel="stylesheet" href="css/style.css">
 		<!-- <link rel="stylesheet" href="css/responsive.css"> -->
-		<link href='https://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 
+
 	<body>
-	<!-- simple media playlist -->
 
 		<!-- header with search bar  -->
 		<div id="header">
@@ -32,24 +31,38 @@
 		</div>
 
 		<!-- search results  -->
-		<div id="results-area">
+		<div id="results-container">
+			<ul id="search-results">
 
-			<div id="result-1">
-				<h3 id="result-1-album">Album 1</h3>
-				<h4 id="relult-1-artist">Artist</h4>
-				<img id="result-1-image" src="#" alt="Artist: Album">
-				<button id="result-1-add-button">Add To My Collection</button>
-			</div>
+				<li>
+					<img id="preview" src="img/APart1x200.gif" alt="">
+					<div id="result-info">
+						<p id="title">Action Pollock - Action Pollock (FULL ALBUM)</p>
+						<p id="duration">45:00</p>
+						<button id="save">Save</button>
+					</div>
+				</li>
 
-			<div id="result-2">
-				<h3 id="result-2-album">Album 2</h3>
-				<h4 id="relult-2-artist">Artist</h4>
-				<img id="result-2-image" src="#" alt="Artist: Album">
-				<button id="result-2-add-button">Add To My Collection</button>
-			</div>
+				
+				<li>
+					<img id="preview" src="img/APart1x200.gif" alt="">
+					<div id="result-info">
+						<p id="title">Action Pollock - Action Pollock (FULL ALBUM)</p>
+						<p id="duration">45:00</p>
+						<button id="save">Save</button>
+					</div>
+				</li>
 
+				<li>
+					<img id="preview" src="img/APart1x200.gif" alt="">
+					<div id="result-info">
+						<p id="title">Action Pollock - Action Pollock (FULL ALBUM)</p>
+						<p id="duration">45:00</p>
+						<button id="save">Save</button>
+					</div>
+				</li>
 
-
+			</ul>
 		</div>
 
 
@@ -61,11 +74,25 @@
 
 
 
+<!--
+ * This function searches for videos related to the keyword 'dogs'. The video IDs and titles
+ * of the search results are logged to Apps Script's log.
+ *
+ * Note that this sample limits the results to 25. To return more results, pass
+ * additional parameters as documented here:
+ *   https://developers.google.com/youtube/v3/docs/search/list
+ */
 
-
-
-
-		<!-- <link rel="scripts" href="scripts.js"> -->
+function searchByKeyword() {
+  var results = YouTube.Search.list('id,snippet', {q: 'dogs', maxResults: 25});
+  for(var i in results.items) {
+    var item = results.items[i];
+    Logger.log('[%s] Title: %s', item.id.videoId, item.snippet.title);
+  }
+}
+-->
+		<script src="jquery-1.11.3.min.js" type="text/javascript"></script>
+		<script src="scripts.js" type="text/javascript"></script>
 	</body>
 
 </html>
